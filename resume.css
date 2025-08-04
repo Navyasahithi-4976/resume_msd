@@ -1,0 +1,136 @@
+/* Reset some browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.role {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.contact {
+    margin-top: 15px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #004f88;
+}
+
+/* Section Headings */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    color: #0077cc;
+}
+
+/* Cards */
+.card {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-left: 4px solid #0077cc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e1f0ff;
+    color: #0077cc;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #0077cc;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+
+.skills span:hover {
+    background: #005fa3;
+}
+
+/* Lists in Awards & Certifications */
+ul.card {
+    list-style-type: "🏅 ";
+    padding-left: 20px;
+}
+
+ul.card li {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+}
